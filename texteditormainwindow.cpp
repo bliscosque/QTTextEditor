@@ -6,10 +6,18 @@ TextEditorMainWindow::TextEditorMainWindow(QWidget *parent)
     , ui(new Ui::TextEditorMainWindow)
 {
     ui->setupUi(this);
+    this->setCentralWidget(ui->textEdit);
 }
 
 TextEditorMainWindow::~TextEditorMainWindow()
 {
     delete ui;
+}
+
+
+void TextEditorMainWindow::on_actionNew_triggered()
+{
+    ui->textEdit->clear();
+    ui->textEdit->setFocus();
 }
 
