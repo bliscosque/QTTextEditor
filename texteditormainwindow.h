@@ -18,9 +18,13 @@ class TextEditorMainWindow : public QMainWindow
 public:
     TextEditorMainWindow(QWidget *parent = nullptr);
     ~TextEditorMainWindow();
+    QString localfilename;
+    QString file_types = "Text files (*.txt) ;; Markdown files (*.md)";
 
 private slots:
     void on_actionNew_triggered();
+
+    void on_actionOpen_triggered();
 
 private:
     Ui::TextEditorMainWindow *ui;
