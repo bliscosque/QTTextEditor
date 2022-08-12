@@ -69,10 +69,10 @@
    </attribute>
    <addaction name="actionNew"/>
    <addaction name="actionOpen"/>
-   <addaction name="actionCopy"/>
+   <addaction name="actionSave"/>
    <addaction name="separator"/>
    <addaction name="actionCut"/>
-   <addaction name="actionSave"/>
+   <addaction name="actionCopy"/>
    <addaction name="actionPaste"/>
    <addaction name="separator"/>
    <addaction name="actionRedo"/>
