@@ -38,7 +38,10 @@
     <addaction name="actionSave"/>
     <addaction name="actionSave_as"/>
     <addaction name="separator"/>
+    <addaction name="actionPrint"/>
+    <addaction name="separator"/>
     <addaction name="actionQuit"/>
+    <addaction name="separator"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
@@ -50,8 +53,24 @@
     <addaction name="actionRedo"/>
     <addaction name="actionUndo"/>
    </widget>
+   <widget class="QMenu" name="menuFormat">
+    <property name="title">
+     <string>Format</string>
+    </property>
+    <addaction name="actionColor"/>
+    <addaction name="actionBackground"/>
+    <addaction name="actionFont"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_this_app"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
+   <addaction name="menuFormat"/>
+   <addaction name="menuAbout"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
@@ -182,6 +201,51 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons-text-edit/cor.png</normaloff>:/icons-text-edit/cor.png</iconset>
+   </property>
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionBackground">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons-text-edit/background.png</normaloff>:/icons-text-edit/background.png</iconset>
+   </property>
+   <property name="text">
+    <string>Background</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons-text-edit/font.png</normaloff>:/icons-text-edit/font.png</iconset>
+   </property>
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
+  <action name="actionAbout_this_app">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons-text-edit/about.png</normaloff>:/icons-text-edit/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>About this app</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons-text-edit/print.png</normaloff>:/icons-text-edit/print.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
    </property>
   </action>
  </widget>

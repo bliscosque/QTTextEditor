@@ -6,6 +6,12 @@
 #include <QFileDialog>
 #include <QTextStream>
 #include <QMessageBox>
+#include <QFontDialog>
+#include <QFont>
+#include <QColor>
+#include <QColorDialog>
+#include <QPrintDialog>
+#include <QPrinter>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class TextEditorMainWindow; }
@@ -41,6 +47,16 @@ private slots:
     void on_actionUndo_triggered();
 
     void on_actionRedo_triggered();
+
+    void on_actionColor_triggered();
+
+    void on_actionBackground_triggered();
+
+    void on_actionFont_triggered();
+
+    void on_actionAbout_this_app_triggered();
+
+    void on_actionPrint_triggered();
 
 private:
     Ui::TextEditorMainWindow *ui;
